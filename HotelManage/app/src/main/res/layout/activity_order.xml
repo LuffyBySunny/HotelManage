@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/peoplemanage"
+    tools:context="com.example.droodsunny.hotelmanage.server.order">
+
+    <Button
+        android:text="返回"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ok"
+        android:layout_toRightOf="@+id/ok"
+        android:layout_toEndOf="@+id/ok"
+        android:layout_marginLeft="63dp"
+        android:layout_marginStart="63dp"
+        android:id="@+id/back" />
+
+    <Spinner
+
+        android:id="@+id/spinder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="137dp">
+
+    </Spinner>
+
+    <EditText
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textColorHint="#ffffff"
+        android:id="@+id/num"
+        android:hint="请输入份数"
+        android:layout_alignTop="@+id/spinder"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="确定"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:id="@+id/ok"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/num"
+        android:layout_toStartOf="@+id/num" />
+
+    <EditText
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="请输入桌台编号"
+        android:textColorHint="#ffffff"
+        android:layout_below="@+id/num"
+        android:layout_alignRight="@+id/back"
+        android:layout_alignEnd="@+id/back"
+        android:layout_marginTop="59dp"
+        android:id="@+id/editText2" />
+</RelativeLayout>

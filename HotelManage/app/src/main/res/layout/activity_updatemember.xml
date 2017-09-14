@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_updatemember"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/peoplemanage"
+    tools:context="com.example.droodsunny.hotelmanage.memberMgr.updatemember">
+
+    <Button
+        android:text="更新"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="49dp"
+        android:id="@+id/update" />
+
+    <Button
+        android:text="返回"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/update"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:id="@+id/back" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:text="ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="86dp"
+        android:id="@+id/ID" />
+
+    <EditText
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_above="@+id/location"
+        android:layout_alignRight="@+id/back"
+        android:layout_alignEnd="@+id/back"
+        android:id="@+id/seats" />
+    <EditText
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignBottom="@+id/location"
+        android:layout_alignRight="@+id/seats"
+        android:layout_alignEnd="@+id/seats"
+        android:id="@+id/locations" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:text="信用值"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/location"
+        android:layout_alignLeft="@+id/location"
+        android:layout_alignStart="@+id/location" />
+
+    <EditText
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/location1"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toRightOf="@+id/update"
+        android:layout_toEndOf="@+id/update" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:text="姓名"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:id="@+id/location"
+        android:layout_below="@+id/ID"
+        android:layout_alignLeft="@+id/ID"
+        android:layout_alignStart="@+id/ID" />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_roommanage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/manage1"
+    tools:context="com.example.droodsunny.hotelmanage.server.roommanage">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="      序号  座位数  状态  楼层   类别   账单"/>
+ <ListView
+    android:id="@+id/list"
+     android:layout_below="@+id/text"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/button">
+
+</ListView>
+<LinearLayout
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    >
+    <Button
+        android:text="查询桌台"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:id="@+id/button1"
+
+        android:layout_marginBottom="25dp" />
+    <Button
+        android:text="开台"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        />
+    <Button
+        android:text="返回"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+         />
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+</RelativeLayout>

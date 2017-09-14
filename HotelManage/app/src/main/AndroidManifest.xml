@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.droodsunny.hotelmanage">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manage.manager" />
+        <activity android:name=".server.server" />
+        <activity android:name=".server.roommanage" />
+        <activity android:name=".server.dishesmanage" />
+        <activity android:name=".server.employeemanage" />
+        <activity android:name=".manage.roomofmanager" />
+        <activity android:name=".tableMgr.addtables" />
+        <activity android:name=".tableMgr.deletetables" />
+        <activity android:name=".tableMgr.upgradetables" />
+        <activity android:name=".tableMgr.addtables1" />
+        <activity android:name=".manage.roomofmanager1" />
+        <activity android:name=".tableMgr.upgradetables1" />
+        <activity android:name=".server.roommanage1" />
+        <activity android:name=".tableMgr.opentables" />
+        <activity android:name=".dishMgr.adddishes" />
+        <activity android:name=".dishMgr.deletedishes" />
+        <activity android:name=".dishMgr.updatedishes" />
+        <activity android:name=".manage.employermanage" />
+        <activity android:name=".workerMgr.updateworker" />
+        <activity android:name=".workerMgr.addworker" />
+        <activity android:name=".workerMgr.deleteworker" />
+        <activity android:name=".memberMgr.addmember" />
+        <activity android:name=".memberMgr.deletemember" />
+        <activity android:name=".memberMgr.updatemember" />
+        <activity android:name=".manage.billmanage" />
+        <activity android:name=".server.reservemanage" />
+        <activity android:name=".reserveMgr.addreserve" />
+        <activity android:name=".reserveMgr.deletereserve" />
+        <activity android:name=".reserveMgr.updatereserve" />
+        <activity android:name=".server.order" />
+        <activity android:name=".manage.dishmanage"></activity>
+    </application>
+
+</manifest>

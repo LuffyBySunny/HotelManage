@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_updatereserve"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/peoplemanage"
+    tools:context="com.example.droodsunny.hotelmanage.reserveMgr.updatereserve">
+
+    <EditText
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="请输入预订人姓名"
+        android:layout_marginTop="34dp"
+        android:id="@+id/name"
+        android:layout_below="@+id/tID"
+        android:layout_alignLeft="@+id/tID"
+        android:layout_alignStart="@+id/tID" />
+
+    <Button
+
+        android:text="返回"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ok"
+        android:layout_alignRight="@+id/date"
+        android:layout_alignEnd="@+id/date"
+        android:id="@+id/back" />
+
+    <EditText
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="请输入更新桌台ID"
+        android:layout_marginTop="50dp"
+        android:id="@+id/tID"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date" />
+
+    <EditText
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="请输入预订人ID"
+        android:layout_marginTop="31dp"
+        android:id="@+id/pID"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date" />
+
+    <EditText
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ffffff"
+        android:ems="10"
+        android:hint="预定日期yyyy-mm-dd"
+        android:layout_marginTop="27dp"
+        android:id="@+id/date"
+        android:layout_below="@+id/pID"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="更新"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/ok"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/back"
+        android:layout_toStartOf="@+id/back" />
+</RelativeLayout>
